@@ -59,7 +59,7 @@
   <h2>Popular Products</h2>
   <div class="products-grid">
     <!--product number 1 -->
-    <div class="product-card">
+    <div class="product-card"data-id="p1">
       <div class="product-image">
         <img src="./images/product-img-1.jpg" alt="Haldiram's Sev Bhujia">
 
@@ -76,7 +76,7 @@
     </div>
       </div>
       
-      <div class="product-details"  data-id="p1">
+      <div class="product-details"  >
         <h3 class="product-title">Haldiram's Sev Bhujia</h3>
         <p class="product-category">Snack &amp; Munchies</p>
         <div class="product-rating"><span><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></span>4.3 (4)</div>
@@ -179,7 +179,7 @@
         <img src="./images/product-img-4.jpg" alt="Haldiram's Sev Bhujia">
          <div class="product-actions">
       <!-- Wishlist -->
-      <a href="" class="action-icon">
+      <a href="#" class="action-icon">
         <i class="bi bi-heart"></i>
       </a>
 
@@ -467,7 +467,7 @@
 <!--product number 12 -->
 
      
- <div class="product-card"  data-id="p2">
+ <div class="product-card"  data-id="p12">
       <div class="product-image">
         <img src="./images/product-img-12.jpg" alt="Haldiram's Sev Bhujia">
          <div class="product-actions">
@@ -643,9 +643,52 @@
 </div>
 
 
+<!-- Quick View Modal -->
+<div id="quick-view-modal" class="quick-view-modal">
+  <div class="quick-view-content">
+    <span id="close-quick-view" class="close">&times;</span>
+
+    <div class="quick-view-left">
+      <img id="quick-view-image" src="" alt="">
+    </div>
+
+    <div class="quick-view-right">
+      <p id="quick-view-category">Category</p>
+      <h2 id="quick-view-name"></h2>
+      <p id="quick-view-price"></p>
+              <div class="product-rating"><span><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></span>4.3 (4 reviews)</div>
+
+      <div class="quantity-controls">
+        <button id="decrease-qty">-</button>
+        <input type="number" id="quantity" value="1" min="1">
+        <button id="increase-qty">+</button>
+      </div>
+  <div class="addHeart-btn" >
+        <button id="quick-view-add-to-cart" class="add-btn">Add to cart</button>
+      <button id="quick-view-wishlist" class="wishlist-btn">❤</button>
+
+  </div>
+  
+
+      <div class="product-info">
+        <p>Product Code: <span id="product-code"></span>FBB00255</p>
+        <p>Availability: <span id="product-availability">In Stock</span></p>
+        
+        <p>Shipping: <span id="product-shipping"></span>01 day shipping. ( Free pickup today)</p>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
 <!--footer in footer.html-->
   <div id="footer"></div>
 <div id="toast-container"></div>
+
+
+
+
   <script>
     // load navbar
     fetch("navbar.html")

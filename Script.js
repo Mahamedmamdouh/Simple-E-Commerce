@@ -89,3 +89,46 @@ document.querySelectorAll(".product-actions .bi-heart").forEach(icon => {
     }
   });
 });
+
+
+// =================Quick view icon=================
+// العناصر
+const quickViewModal = document.getElementById("quick-view-modal");
+const closeQuickView = document.getElementById("close-quick-view");
+
+const qvImage = document.getElementById("quick-view-image");
+const qvName = document.getElementById("quick-view-name");
+const qvPrice = document.getElementById("quick-view-price");
+const qvCategory = document.getElementById("quick-view-category");
+const qvQty = document.getElementById("quantity");
+
+document.querySelectorAll(".product-actions .bi-eye").forEach(icon => {
+  icon.addEventListener("click", () => {
+    const productCard = icon.closest(".product-card");
+    const product = {
+      name: productCard.querySelector(".product-title").textContent,
+      price: productCard.querySelector(".current-price").textContent,
+      image: productCard.querySelector("img").src,
+      category: productCard.querySelector('.product-category').textContent
+    };
+
+    qvImage.src = product.image;
+    qvName.textContent = product.name;
+    qvPrice.textContent = product.price;
+    qvCategory.textContent = product.category;
+    qvQty.value = 1;
+
+    quickViewModal.style.display = "flex";
+  });
+});
+
+
+closeQuickView.addEventListener("click", () => {
+  quickViewModal.style.display = "none";
+});
+
+window.addEventListener("click", (e) => {
+  if(e.target === quickViewModal){
+    quickViewModal.style.display = "none";
+  }
+});
