@@ -58,25 +58,33 @@ function showToast(message, type = "success") {
 }
 
 // ================= Cart & Wishlist =================
-// Add to cart button
-document.querySelectorAll(".add-to-cart").forEach(button => {
-  button.addEventListener("click", () => {
-    showToast("Product added to cart", "success");
-  });
-});
 
 // Wishlist (heart) icons
 document.querySelectorAll(".product-actions .bi-heart").forEach(icon => {
   icon.addEventListener("click", (e) => {
     e.preventDefault();
 
-    if (icon.classList.contains("active")) {
-      // Already in wishlist → show error icon
+    const productCard = icon.closest(".product-card");
+    const product = {
+      id: productCard.dataset.id, 
+      name: productCard.querySelector(".product-title").textContent,
+      price: productCard.querySelector(".current-price").textContent,
+      image: productCard.querySelector("img").src
+    };
+
+    let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
+
+    const exists = wishlist.some(item => item.id === product.id);
+
+    if (exists) {
       showToast("Product already in wishlist", "error");
     } else {
-      // Add to wishlist
+      wishlist.push(product);
+      localStorage.setItem("wishlist", JSON.stringify(wishlist));
+
       icon.classList.add("active");
-      icon.style.color = "red"; 
+      icon.style.color = "red";
+
       showToast("Product added to wishlist", "success");
     }
   });
