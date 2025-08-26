@@ -145,6 +145,47 @@ body {
   color: #0AAD0A;
 }
 
+/* Dropdown */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  min-width: 180px;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  display: none;
+  z-index: 500;
+}
+
+.dropdown-menu li {
+    padding:4px;
+}
+
+.dropdown-menu li a {
+  color: #333;
+  padding: 10px 30px;
+  display: block;
+    border-radius: 6px;  
+}
+
+.dropdown-menu li a:hover {
+  background: #f2f2f2;
+  color: #28a745;
+ 
+}
+
+/* Show on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
 
 
 /* Slider Styles - FreshCart Original Style + animation*/
@@ -919,14 +960,14 @@ align-items: center;
   padding: 20px 0;
 }
 
-/* تحسين محتوى المودال */
+
 .quick-view-content {
   background: #fff;
   width: 90%;
   max-width: 900px;
   margin: 50px auto;
   display: flex;
-  flex-wrap: wrap; /* لتجنب مشكلة الشاشات الصغيرة */
+  flex-wrap: wrap; 
   padding: 25px;
   border-radius: 15px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.2);
@@ -934,7 +975,7 @@ align-items: center;
   transition: all 0.3s ease;
 }
 
-/* زر الإغلاق */
+
 .close {
   position: absolute;
   top: 15px; right: 20px;
@@ -948,7 +989,7 @@ align-items: center;
   color: #e74c3c;
 }
 
-/* صورة المنتج */
+
 .quick-view-left {
   flex: 1;
   min-width: 250px;
@@ -965,7 +1006,7 @@ align-items: center;
   transform: scale(1.05);
 }
 
-/* القسم الأيمن */
+
 .quick-view-right {
   flex: 1;
   min-width: 250px;
@@ -990,7 +1031,7 @@ align-items: center;
   font-size: 1rem;
 }
 
-/* أزرار التحكم بالكمية */
+
 .quantity-controls {
   display: flex;
   align-items: center;
@@ -1050,15 +1091,161 @@ align-items: center;
   color: white;
 }
 
-/* معلومات المنتج */
+
 .product-info p {
   margin: 5px 0;
   font-size: 0.95rem;
 }
 
+/*********************Sign up page****************************/
 
 
+.header-SignUp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 40px;
+  border-bottom: 1px solid #eee;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  
+  margin: auto;
+}
+.header-SignUp .container{
+  
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0;
 
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #1a1a1a;
+}
+
+
+.signin-link {
+  font-size: 14px;
+}
+
+.signin-link a {
+  color: #28a745;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.signin-link a:hover {
+  text-decoration: underline;
+}
+
+/* Main */
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  padding: 60px 20px;
+}
+
+.illustration img {
+  max-width: 400px;
+}
+
+.form-box {
+  max-width: 400px;
+  width: 100%;
+}
+
+.form-box h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #1a1a1a;
+}
+
+.form-box p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.name-fields {
+  display: flex;
+  gap: 10px;
+}
+
+input {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  width: 100%;
+}
+
+.password-field {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.password-field input {
+  border: none;
+  flex: 1;
+  outline: none;
+}
+
+.password-field i {
+  padding: 0 12px;
+  color: #777;
+  cursor: pointer;
+}
+
+.btn {
+  background: #00a000;
+  color: #fff;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #009000;
+}
+
+.terms {
+  font-size: 12px;
+  color: #666;
+  margin-top: 15px;
+}
+
+.terms a {
+  color: #28a745;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.terms a:hover {
+  text-decoration: underline;
+}
 
 
 
