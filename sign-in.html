@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FreshCart - Sign In</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+      <div class="container">
+    <div class="logo">
+      <img src="./images/freshcart-logo.svg" alt="FreshCart Logo">
+
+    </div>
+    <div class="signin-link">
+    Don’t have an account? <a href="./sign-up.html">Sign up</a>
+    </div>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="main">
+    <div class="illustration">
+      <img src="./images/signin-g.svg" alt="Sign in Illustration">
+    </div>
+    <div class="form-box">
+      <h2>Sign in to FreshCart</h2>
+      <p>Welcome back to FreshCart! Enter your email to get started.</p>
+
+      <form>
+        <input type="email" placeholder="Email" required>
+
+        <div class="password-field">
+          <input type="password" placeholder="*****" required>
+          <i class="bi bi-eye-slash"></i>
+        </div>
+
+        <div class="form-options">
+          <label >
+            <input type="checkbox"> <span>Remember me</span>
+          </label>
+          <a href="#" class="reset">Forgot password? <span>Reset It</span></a>
+        </div>
+
+        <button type="submit" class="btn">Sign In</button>
+      </form>
+
+      <p class="terms">
+        Don’t have an account? <a href="./sign-up.html">Sign Up</a>
+      </p>
+    </div>
+  </main>
+
+  
+  <!--footer in footer.html-->
+  <div id="footer"></div>
+
+
+   <script>
+
+
+    // load footer
+    fetch("footer.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("footer").innerHTML = data);
+
+  </script>
+
+
+</body>
+</html>
