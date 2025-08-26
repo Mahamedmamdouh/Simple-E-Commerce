@@ -12,14 +12,13 @@
 
   <!-- Header -->
   <header class="header">
-      <div class="container">
-    <div class="logo">
-      <img src="./images/freshcart-logo.svg" alt="FreshCart Logo">
-
-    </div>
-    <div class="signin-link">
-    Don’t have an account? <a href="./sign-up.html">Sign up</a>
-    </div>
+    <div class="container">
+      <div class="logo">
+        <img src="./images/freshcart-logo.svg" alt="FreshCart Logo">
+      </div>
+      <div class="signin-link">
+        Don’t have an account? <a href="./sign-up.html">Sign up</a>
+      </div>
     </div>
   </header>
 
@@ -32,16 +31,18 @@
       <h2>Sign in to FreshCart</h2>
       <p>Welcome back to FreshCart! Enter your email to get started.</p>
 
-      <form>
-        <input type="email" placeholder="Email" required>
+      <!-- ✅ Added id="signinForm" -->
+      <form id="signinForm">
+        <!-- ✅ Added id for inputs -->
+        <input type="email" id="signinEmail" placeholder="Email" required>
 
         <div class="password-field">
-          <input type="password" placeholder="*****" required>
+          <input type="password" id="signinPassword" placeholder="*****" required>
           <i class="bi bi-eye-slash"></i>
         </div>
 
         <div class="form-options">
-          <label >
+          <label>
             <input type="checkbox"> <span>Remember me</span>
           </label>
           <a href="#" class="reset">Forgot password? <span>Reset It</span></a>
@@ -50,27 +51,26 @@
         <button type="submit" class="btn">Sign In</button>
       </form>
 
+      <!-- ✅ Message area -->
+      <p id="signinMessage" class="message"></p>
+
       <p class="terms">
         Don’t have an account? <a href="./sign-up.html">Sign Up</a>
       </p>
     </div>
   </main>
 
-  
   <!--footer in footer.html-->
   <div id="footer"></div>
 
-
-   <script>
-
-
+  <script>
     // load footer
     fetch("footer.html")
       .then(res => res.text())
       .then(data => document.getElementById("footer").innerHTML = data);
-
   </script>
 
-
+  <!-- ✅ auth.js script -->
+  <script src="auth.js"></script>
 </body>
 </html>
