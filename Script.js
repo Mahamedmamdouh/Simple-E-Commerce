@@ -33,8 +33,28 @@ setInterval(() => {
 
 
 
+/*******slider category section********************* */
+const categoriesContainer = document.querySelector(".categories-container");
+const prevBtn = document.querySelector(".prev-btn");
+const nextBtn = document.querySelector(".next-btn");
 
+const scrollAmount = 200; // المسافة اللي يتحركها بالسهم
 
+prevBtn.addEventListener("click", () => {
+  categoriesContainer.scrollBy({
+    left: -scrollAmount,
+    behavior: "smooth"
+  });
+});
+
+nextBtn.addEventListener("click", () => {
+  categoriesContainer.scrollBy({
+    left: scrollAmount,
+    behavior: "smooth"
+  });
+});
+
+   /***************************** */
 
 // Function to show toast
 function showToast(message, type = "success") {
@@ -92,7 +112,7 @@ document.querySelectorAll(".product-actions .bi-heart").forEach(icon => {
 
 
 // =================Quick view icon=================
-// العناصر
+
 const quickViewModal = document.getElementById("quick-view-modal");
 const closeQuickView = document.getElementById("close-quick-view");
 
@@ -131,4 +151,32 @@ window.addEventListener("click", (e) => {
   if(e.target === quickViewModal){
     quickViewModal.style.display = "none";
   }
+});
+/*********Filter section************* */
+const categoryCards = document.querySelectorAll(".category-card");
+const products = document.querySelectorAll(".product-card");
+const sectionTitle = document.querySelector(".popular-products h2");
+
+categoryCards.forEach(card => {
+  card.addEventListener("click", () => {
+    const category = card.querySelector("p").textContent.trim();
+
+    if (category.toLowerCase() === "show all") {
+      
+      sectionTitle.textContent = "Popular Products";
+      products.forEach(product => {
+        product.style.display = "block";
+      });
+    } else {
+      
+      sectionTitle.textContent = category;
+
+      products.forEach(product => {
+        const productCategory = product.dataset.category.trim().toLowerCase();
+        product.style.display = (productCategory === category.toLowerCase())
+          ? "block"
+          : "none";
+      });
+    }
+  });
 });

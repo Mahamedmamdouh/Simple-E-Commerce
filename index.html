@@ -49,7 +49,96 @@
 
 
 
+<!--Category section-->
 
+
+  <section class="categories">
+    <h2 class="section-title">Featured Categories</h2>
+    <div>
+        <button class="category-card show-all">
+      <p>Show All</p>
+    </button>
+            <button class="slider-btn prev-btn"><i class="bi bi-chevron-left"></i></button>
+            <button class="slider-btn next-btn"><i class="bi bi-chevron-right"></i></button>
+
+    </div>
+      
+    <div class="categories-container">
+    
+     
+      <!-- Category 1 -->
+    
+        <div class="category-card">
+        <img src="./images/category-snack-munchies.jpg" alt="Snacks & Munchies">
+        <p>Snack & Munchies</p>
+      </div>
+
+      <!-- Category 2 -->
+      
+       <div class="category-card">
+        <img src="./images/category-dairy-bread-eggs.jpg" alt="Dairy, Bread & Eggs">
+        <p>Dairy, Bread & Eggs</p>
+      </div>
+      
+
+      <!-- Category 3 -->
+       
+      <div class="category-card">
+        <img src="./images/category-instant-food.jpg" alt="Instant Food">
+        <p>Instant Food</p>
+      </div>
+    
+
+      <!-- Category 4 -->
+       
+      <div class="category-card">
+        <img src="./images/category-bakery-biscuits.jpg" alt="Bakery & Biscuits">
+        <p>Bakery & Biscuits</p>
+      </div>
+       
+
+      <!-- Category 5 -->
+        <div class="category-card">
+        <img src="./images/category-fruits-vegetables.jpg" alt="Fruits & Vegetables">
+        <p>Fruits & Vegetables</p>
+      </div>
+       
+
+      <!-- Category 6 -->
+     <div class="category-card">
+        <img src="./images//category-tea-coffee-drinks.jpg" alt="Tea, Coffee & Drinks">
+        <p>Tea, Coffee & Drinks</p>
+      </div>
+      
+      
+
+      <!-- Category 7-->
+           <div class="category-card">
+        <img src="./images/category-chicken-meat-fish.jpg" alt="Chicken, Meat & Fish">
+        <p>Chicken, Meat & Fish</p>
+      </div>
+      
+    
+
+
+       <!-- Category 8-->
+         <div class="category-card">
+        <img src="./images/category-baby-care.jpg" alt="Baby Care">
+        <p>Baby Care</p>
+      </div>
+    
+      
+       <!-- Category 9-->
+    <div class="category-card">
+        <img src="./images/category-atta-rice-dal.jpg" alt="Atta, Rice & Dal">
+        <p>Atta, Rice & Dal</p>
+      </div>
+     
+
+
+    </div>
+
+  </section>
 
 
 
@@ -63,7 +152,7 @@
   <h2>Popular Products</h2>
   <div class="products-grid">
     <!--product number 1 -->
-    <div class="product-card"data-id="p1">
+    <div class="product-card" data-id="p1" data-category="Snack & Munchies" >
       <div class="product-image">
         <img src="./images/product-img-1.jpg" alt="Haldiram's Sev Bhujia">
 
@@ -72,7 +161,6 @@
       <a href="#" class="action-icon">
         <i class="bi bi-heart"></i>
       </a>
-
       <!-- Quick View -->
       <a href="#" class="action-icon">
         <i class="bi bi-eye"></i>
@@ -82,7 +170,7 @@
       
       <div class="product-details"  >
         <h3 class="product-title">Haldiram's Sev Bhujia</h3>
-        <p class="product-category">Snack &amp; Munchies</p>
+        <p class="product-category" data-category="Snack & Munchies">Snack & Munchies</p>
         <div class="product-rating"><span><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></span>4.3 (4)</div>
         
         <div class="one_line">            
@@ -102,7 +190,7 @@
    
 
     <!--product number 2 -->
-    <div class="product-card"  data-id="p2">
+    <div class="product-card"  data-id="p2"  data-category="Bakery & Biscuits">
       <div class="product-image">
         <img src="./images/product-img-2.jpg" alt="Haldiram's Sev Bhujia">
          <div class="product-actions">
@@ -119,7 +207,7 @@
       </div>
       <div class="product-details">
         <h3 class="product-title">NutriChoice Digestive</h3>
-        <p class="product-category">Bakery & Biscuits</p>
+        <p class="product-category" data-category="Bakery & Biscuits">Bakery & Biscuits</p>
         <div class="product-rating"><span><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></span>4.3 (4)</div>
         
         <div class="one_line">            
@@ -141,7 +229,7 @@
 
     
     <!--product number 3 -->
-    <div class="product-card"  data-id="p3">
+    <div class="product-card"  data-id="p3"  data-category="Bakery & Biscuits">
       <div class="product-image">
         <img src="./images/product-img-3.jpg" alt="Haldiram's Sev Bhujia">
          <div class="product-actions">
@@ -158,7 +246,7 @@
       </div>
       <div class="product-details"  data-id="p3">
         <h3 class="product-title">Cadbury Chocolate</h3>
-        <p class="product-category">Bakery & Biscuits</p>
+        <p class="product-category"data-category="Bakery & Biscuits">Bakery & Biscuits</p>
         <div class="product-rating"><span><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></span>4.3 (4)</div>
         
         <div class="one_line">            
@@ -178,7 +266,7 @@
 
 <!--product number 4 -->
 
- <div class="product-card"  data-id="p4">
+ <div class="product-card"  data-id="p4" data-category="Snack & Munchies">
       <div class="product-image">
         <img src="./images/product-img-4.jpg" alt="Haldiram's Sev Bhujia">
          <div class="product-actions">
@@ -195,7 +283,7 @@
       </div>
       <div class="product-details">
         <h3 class="product-title">Onion Flavour Potato</h3>
-        <p class="product-category">Snack & Munchies</p>
+        <p class="product-category"data-category="Snack & Munchies">Snack & Munchies</p>
         <div class="product-rating"><span><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></span>4.3 (4)</div>
         
         <div class="one_line">            
@@ -218,7 +306,7 @@
 
 <!--product number 5 -->
   
- <div class="product-card"  data-id="p5">
+ <div class="product-card"  data-id="p5" data-category="Snack & Munchies">
       <div class="product-image">
         <img src="./images/product-img-5.jpg" alt="Haldiram's Sev Bhujia">
          <div class="product-actions">
@@ -235,7 +323,7 @@
       </div>
       <div class="product-details">
         <h3 class="product-title">Haldiram's Sev Bhujia</h3>
-        <p class="product-category">Snack & Munchies</p>
+        <p class="product-category"data-category="Snack & Munchies">Snack & Munchies</p>
         <div class="product-rating"><span><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></span>4.3 (4)</div>
         
         <div class="one_line">            
@@ -253,7 +341,7 @@
 
 <!--product number 6 -->
    
- <div class="product-card" data-id="p6">
+ <div class="product-card" data-id="p6" data-category="Dairy, Bread & Eggs">
       <div class="product-image">
         <img src="./images/product-img-6.jpg" alt="Haldiram's Sev Bhujia">
          <div class="product-actions">
@@ -270,7 +358,7 @@
       </div>
       <div class="product-details">
         <h3 class="product-title">Blueberry Yogurt</h3>
-        <p class="product-category">Dairy, Bread & Eggs</p>
+        <p class="product-category"data-category="Dairy, Bread & Eggs">Dairy, Bread & Eggs</p>
         <div class="product-rating"><span><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></span>4.3 (4)</div>
         
         <div class="one_line">            
@@ -291,7 +379,7 @@
 <!--product number 7 -->
 
    
- <div class="product-card"  data-id="p7">
+ <div class="product-card"  data-id="p7"data-category="Dairy, Bread & Eggs" >
       <div class="product-image">
         <img src="./images/product-img-7.jpg" alt="Haldiram's Sev Bhujia">
          <div class="product-actions">
@@ -308,7 +396,7 @@
       </div>
       <div class="product-details">
         <h3 class="product-title">Britannia Cheese</h3>
-        <p class="product-category">Dairy, Bread & Eggs</p>
+        <p class="product-category"data-category="Dairy, Bread & Eggs">Dairy, Bread & Eggs</p>
         <div class="product-rating"><span><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></span>4.3 (4)</div>
         
         <div class="one_line">            
@@ -327,7 +415,7 @@
 <!--product number 8 -->
   
 
- <div class="product-card" data-id="p8">
+ <div class="product-card" data-id="p8" data-category="Instant Food">
       <div class="product-image">
         <img src="./images/product-img-8.jpg" alt="Haldiram's Sev Bhujia">
          <div class="product-actions">
@@ -344,7 +432,7 @@
       </div>
       <div class="product-details">
         <h3 class="product-title">Kellogg's Cereals</h3>
-        <p class="product-category">Instant Food</p>
+        <p class="product-category"data-category="Instant Food">Instant Food</p>
         <div class="product-rating"><span><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></span>4.3 (4)</div>
         
         <div class="one_line">            
@@ -362,7 +450,7 @@
 
 <!--product number 9 -->
 
- <div class="product-card" data-id="p9">
+ <div class="product-card" data-id="p9" data-category="Snack & Munchies">
       <div class="product-image">
         <img src="./images/product-img-9.jpg" alt="Haldiram's Sev Bhujia">
          <div class="product-actions">
@@ -379,7 +467,7 @@
       </div>
       <div class="product-details">
         <h3 class="product-title">Slurrp Chocolate</h3>
-        <p class="product-category">Snack & Munchies</p>
+        <p class="product-category"data-category="Snack & Munchies">Snack & Munchies</p>
         <div class="product-rating"><span><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></span>4.3 (4)</div>
         
         <div class="one_line">            
@@ -398,7 +486,7 @@
 <!--product number 10 -->
 
 
- <div class="product-card" data-id="p10">
+ <div class="product-card" data-id="p10" data-category="Dairy, Bread & Eggs">
       <div class="product-image">
         <img src="./images/product-img-10.jpg" alt="Haldiram's Sev Bhujia">
          <div class="product-actions">
@@ -415,7 +503,7 @@
       </div>
       <div class="product-details">
         <h3 class="product-title">Amul Butter - 500 g</h3>
-        <p class="product-category">Dairy, Bread & Eggs</p>
+        <p class="product-category"data-category="Dairy, Bread & Eggs">Dairy, Bread & Eggs</p>
         <div class="product-rating"><span><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></span>4.3 (4)</div>
         
         <div class="one_line">            
@@ -435,7 +523,7 @@
 <!--product number 11 -->
        
 
- <div class="product-card" data-id="p11">
+ <div class="product-card" data-id="p11" data-category="Tea, Coffee & Drinks">
       <div class="product-image">
         <img src="./images/product-img-11.jpg" alt="Haldiram's Sev Bhujia">
          <div class="product-actions">
@@ -452,7 +540,7 @@
       </div>
       <div class="product-details">
         <h3 class="product-title">Roast Ground Coffee</h3>
-        <p class="product-category">Tea, Coffee & Drinks</p>
+        <p class="product-category"data-category="Tea, Coffee & Drinks">Tea, Coffee & Drinks</p>
         <div class="product-rating"><span><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></span>4.3 (4)</div>
         
         <div class="one_line">            
@@ -471,7 +559,7 @@
 <!--product number 12 -->
 
      
- <div class="product-card"  data-id="p12">
+ <div class="product-card"  data-id="p12" data-category="Instant Food">
       <div class="product-image">
         <img src="./images/product-img-12.jpg" alt="Haldiram's Sev Bhujia">
          <div class="product-actions">
@@ -488,7 +576,7 @@
       </div>
       <div class="product-details">
         <h3 class="product-title">Crushed Tomatoes</h3>
-        <p class="product-category">Instant Food</p>
+        <p class="product-category"data-category="Instant Food">Instant Food</p>
         <div class="product-rating"><span><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></span>4.3 (4)</div>
         
         <div class="one_line">            
@@ -509,7 +597,7 @@
        
 
 
- <div class="product-card"  data-id="p13">
+ <div class="product-card"  data-id="p13"data-category="Fruits & vegetables"  >
       <div class="product-image">
         <img src="./images/product-img-13.jpg" alt="Haldiram's Sev Bhujia">
          <div class="product-actions">
@@ -526,7 +614,7 @@
       </div>
       <div class="product-details">
         <h3 class="product-title">Golden Pineapple</h3>
-        <p class="product-category">Fruits & vegetables</p>
+        <p class="product-category"data-category="Fruits & vegetables">Fruits & vegetables</p>
         <div class="product-rating"><span><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></span>4.3 (4)</div>
         
         <div class="one_line">            
@@ -544,7 +632,7 @@
 
 <!--product number 14 -->
      
- <div class="product-card"  data-id="p14">
+ <div class="product-card"  data-id="p14"data-category="Dairy, Bread & Eggs" >
       <div class="product-image">
         <img src="./images/product-img-6.jpg" alt="Haldiram's Sev Bhujia">
          <div class="product-actions">
@@ -561,7 +649,7 @@
       </div>
       <div class="product-details">
         <h3 class="product-title">Blueberry Yogurt</h3>
-        <p class="product-category">Dairy, Bread & Eggs</p>
+        <p class="product-category" data-category="Dairy, Bread & Eggs">Dairy, Bread & Eggs</p>
         <div class="product-rating"><span><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></span>4.3 (4)</div>
         
         <div class="one_line">            
@@ -580,7 +668,7 @@
 <!--product number 15 -->
 
      
- <div class="product-card"  data-id="p15">
+ <div class="product-card"  data-id="p15" data-category="Instant Food">
       <div class="product-image">
         <img src="./images/product-img-2.jpg" alt="Haldiram's Sev Bhujia">
          <div class="product-actions">
@@ -597,7 +685,7 @@
       </div>
       <div class="product-details">
         <h3 class="product-title">Kellogg's Cereals</h3>
-        <p class="product-category">Instant Food</p>
+        <p class="product-category"data-category="Instant Food">Instant Food</p>
         <div class="product-rating"><span><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></span>4.3 (4)</div>
         
         <div class="one_line">            
