@@ -523,6 +523,81 @@ background-color: #26404B;
 
 
 /******End category section************************/
+/************banner section**************************/
+
+.banner-card {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 80px 40px;
+  border-radius: 12px;
+  width: 100%;
+  overflow: hidden;
+  object-fit:cover ;
+  display: flex;
+  height: 200px;
+}
+
+.photo{
+  width: 100%;
+
+}
+
+.banner-content {
+  position: relative;
+  z-index: 1;
+}
+
+.banner-content {
+  max-width: 70%;
+}
+.row{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    gap: 50px;
+
+    margin: 20px 0;
+}
+
+.banner-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.banner-text {
+  font-size: 16px;
+  margin-bottom: 16px;
+  color: #334155;
+}
+
+
+
+
+.shop-btn {
+  padding: 10px 20px;
+  background-color: #003049;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.shop-btn:hover {
+  background-color: #001f33;
+}
+
+
+
+
+
+/************End banner section**************************/
 
 /**section of cards (popular products)**/
 
@@ -727,9 +802,10 @@ background-color: #26404B;
   display: grid;
   grid-template-columns: repeat(4, 1fr); 
   gap: 30px;
-  width: 90%;
+  width: 100%;
   max-width: 1200px;
-  margin: 30px auto;
+  margin: 80px auto;
+
 
 }
 
